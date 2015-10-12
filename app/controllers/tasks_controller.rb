@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  # no need for show page as we redirect back to all tasks for that list
+  # 
   # def show
   #   tasks = @list.task
   #   render :show
