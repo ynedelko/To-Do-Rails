@@ -1,0 +1,16 @@
+<h1>Edit List</h1>
+
+<%= form_for @list do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
+<% if @list.errors.any? %>
+<h4>Fix the following:</h4>
+<ul>
+  <% @list.errors.full_message.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+</ul>
+<% end %>
