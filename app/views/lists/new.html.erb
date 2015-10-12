@@ -1,19 +1,7 @@
 
 <h1>Add List</h1>
-<%= form_for @list do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
-<% end %>
 
-<% if @list.errors.any? %>
-  <h3>Nope!</h3>
-  <ul>
-    <% @list.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render "form" %>
 
 
 <hr>
